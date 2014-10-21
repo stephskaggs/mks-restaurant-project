@@ -44,26 +44,33 @@
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
+            <div class="row">
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location">
+                    <div class="column small-12 large-4">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
-                    111 east cesar chavez
-                    austin, texas 78701
-                    512.478.2291
+                        at the Radisson Hotel
+                        111 east cesar chavez
+                        austin, texas 78701
+                        512.478.2291
+                    </div>
                 </div>
-
+            
                 <div class="map">
+                    <div class="column small-12 large-4">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                        <a href="goo.gl/maps/qgnVW"><img src="images/map.png"></a>
+                    </div>
                 </div>
 
                 <div class="hours">
-                    <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                    <div class="column small-12 large-4">
+                        <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
+                        breakfast: 6:30–11am
+                        lunch: 11am–3pm
+                        limited menu: 3–5pm
+                        dinner: 5–10pm
+                    </div>
                 </div>
 
         </section>
@@ -78,30 +85,74 @@
 
                 <!-- TODO write the following HTML for each of the menus.
 
-                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #menu-section-breakfast
+                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #menu-breakfast
 
                 Give them a small-2 columns so they line up appropriately next to each other.
 
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
                 -->
-                <div class="menu-section" id="NAMEOFSECTION">
-                    <h3>
-                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
-                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
-                            <!-- TODO name of menu section -->
-                        </a>
-                    </h3>
+            <div class="row">
+                 <div class="menu-section" id="breakfast">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Breakfast</a>
+                        </h3>
+                    </div>
                 </div>
 
+                  <div class="menu-section" id="lunch">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Lunch</a>
+                        </h3>
+                    </div>
+                </div>
+
+                  <div class="menu-section" id="dinner">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Dinner</a>
+                        </h3>
+                    </div>
+                </div>
+
+                  <div class="menu-section" id="dessert">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Dessert</a>
+                        </h3>
+                    </div>
+                </div>
+
+                  <div class="menu-section" id="cocktails">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Cocktails</a>
+                        </h3>
+                    </div>
+                </div>
+
+                  <div class="menu-section" id="wine">
+                    <div class="column small-2">
+                        <h3> 
+                            <a href="#">Wine</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
             <!-- TODO add a foundation row to wrap around this content -->
+                
+            <div class="row">
                 <div id="menu-section-content" class="menu-section-content">
+
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
 
-                        <div class="menu-group">
+                    <div class="menu-group">
+                        <div class="column small-2">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <h4>Raw Bar</h4>
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
 
@@ -110,6 +161,7 @@
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
                         </div>
                 </div>
+            </div>
 
         </section>
 
