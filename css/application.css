@@ -36,9 +36,10 @@ header .tagline {
     text-align: center;
     background: rgba(34, 28, 18,.5); /* I added this transparent background bar for you. */
     padding: 10px;
-    
-    /* TODO add some padding to give it space around the text */
-    /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
+    position: absolute;
+    top: 35%;
+    width: 100%;   
+
     /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
 }
 
@@ -61,17 +62,28 @@ section {
 /* ---------------------------------------------- */
 
 .address {
-    /* TODO give this section a background of #221c12 and a color of #fffdf0. make the text centered */
+    background-color: #221c12;
+    color: #fffdf0;
+    text-align: center;
+      
 }
 
 .location,
 .hours {
+    padding-top: 6em;
     /* TODO give these two divs some padding so that they line up with the map */
 }
 
-.hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ }
-.hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ }
+.hours-label { 
+    font-style: bold;
+    border: solid white;
 
+/* TODO style these with the appropriate font styles (bold/italic) */ }
+.hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ 
+    font-style: italic;
+    border: solid white;
+}
+ 
 
 
 /* ---------------------------------------------- */
@@ -79,24 +91,45 @@ section {
 /* ---------------------------------------------- */
 
 .menu {
-    /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
+    color: #221c12;
+    background: #fffdf0;
+    padding: 3em;
+ 
 }
 
 .menu h2 {
+    font-size: 4em;
+    text-align: center;
     /* TODO make this font size larger than the Foundation default */
 }
 
 .menu h2, .menu h3, .menu h4 {
+    color: #221c12 ;
     /* TODO give these headers a color of #221c12 */
 }
 
+.menu-section {
+    text-align: center;
+}
 
 /* TODO center the text of the h2 and menu-section */
 
 .menu-section h3 a {
+    color: rgba(34, 28, 18, .75);
+    border-bottom: 3px solid #221c12;
+    padding: 2px;
+}
+
+.menu-section h3 a::hover{
+    -webkit-transition: background-color 500ms ease-out 1s;
+    -moz-transition: background-color 500ms ease-out 1s;
+    -o-transition: background-color 500ms ease-out 1s;
+    transition: background-color 500ms ease-out 1s;
+}
+
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
-}
+
 
 
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
@@ -128,6 +161,9 @@ section {
 /* ---------------------------------------------- */
 
 .contact {
+    background-color: #221c12;
+    background-image: url(images/symbols-bottom.png);
+
     /* TODO add the dark brown background color, and the background image symbols-bottom. Change the background-position so that the bottom of it shows (where the symbols start to fade out). */
     /* TODO add some top and bottom padding so that the content doesn't overlap the background image. Note how the padding changes the location of the background image. */
 }
