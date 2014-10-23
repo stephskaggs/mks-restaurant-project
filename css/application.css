@@ -71,19 +71,25 @@ section {
 .location,
 .hours {
     padding-top: 6em;
+
     /* TODO give these two divs some padding so that they line up with the map */
 }
 
-.hours-label { 
-    font-style: bold;
-    border: solid white;
 
-/* TODO style these with the appropriate font styles (bold/italic) */ }
+
+.hours-label { 
+    font-weight: bold;
+   
+
+}
+/* TODO style these with the appropriate font styles (bold/italic) */ 
 .hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ 
     font-style: italic;
-    border: solid white;
+  
+ 
 }
  
+
 
 
 /* ---------------------------------------------- */
@@ -116,15 +122,19 @@ section {
 
 .menu-section h3 a {
     color: rgba(34, 28, 18, .75);
-    border-bottom: 3px solid #221c12;
+    border-bottom: 3px solid rgba(34, 28, 18, 0);
     padding: 2px;
 }
 
-.menu-section h3 a::hover{
-    -webkit-transition: background-color 500ms ease-out 1s;
-    -moz-transition: background-color 500ms ease-out 1s;
-    -o-transition: background-color 500ms ease-out 1s;
-    transition: background-color 500ms ease-out 1s;
+.menu-section h3 a:hover,
+.menu-section h3 a:active {
+    color: rgba(34, 28, 18, 1.0);
+    border-bottom: 3px solid rgba(34, 28, 18, 1.0);
+
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
 }
 
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
