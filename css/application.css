@@ -147,14 +147,28 @@ section {
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
 .menu-section-content {
+    margin: 2em;
     /* TODO give this some space below the menu links */
 }
 
 
 .menu-item {
+    margin-bottom: 1em;
     /* TODO give each menu item some bottom margin */
 }
 
+.menu-item-dish {
+    font-weight: bold;
+}
+
+.menu-item-ingredients {
+    font-style: italic;
+    display: inline-block;
+}
+
+.menu-item-price {
+    
+}
 /* TODO style the menu-item-dish to be bold */
 
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
