@@ -147,27 +147,33 @@ section {
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
 .menu-section-content {
-    margin: 2em;
+    padding: 2em;
     /* TODO give this some space below the menu links */
 }
 
 
 .menu-item {
-    margin-bottom: 1em;
+    padding-bottom: 1em;
     /* TODO give each menu item some bottom margin */
+/*    border: solid red;*/
 }
 
 .menu-item-dish {
     font-weight: bold;
+    /*border: solid blue;*/
 }
+
+
 
 .menu-item-ingredients {
     font-style: italic;
-    display: inline-block;
+    display: inline;
+    /*border: solid black;*/
 }
 
 .menu-item-price {
-    
+    display: inline;
+   /* border: solid black;*/
 }
 /* TODO style the menu-item-dish to be bold */
 
