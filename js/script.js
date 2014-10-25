@@ -52,10 +52,11 @@ $(function() {
     // By setting a parameter of `course`, we can pass the course we want the
     // menu for into this function
 
-    function getMenu( course ) {
+     function getMenu( course ) {
      // Use `$.getJSON` to get the menu for whatever menu heading was clicked
-     $.getJSON( './json/menu-' + course + '.json', function( json ) {
+     $.getJSON( 'json/menu-' + course + '.json', function( json ) {
        populateMenu( json );
+       // console.log(course);
        // Once you're started with TODO #3, call the populateMenu function here
        // and pass json as the argument
      });
