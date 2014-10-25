@@ -21,18 +21,20 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var  id = $( this );attr('id')
+        // console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '' ).removeClass( '' );
+      $( '.menu-selection-item' ).removeClass( 'is-active' );
+        // console.log(id);
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '' );
+      $( this ).addClass( 'is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
-
+      getMenu(id);
     });
 
 
