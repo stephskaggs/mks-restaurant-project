@@ -353,24 +353,25 @@
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
+
         <!-- Our JS -->
         <!-- TODO link to our script.js file -->
-        <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/script.js"></script>
 
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
-        <script type="text/javascript" src="js/slick.min.js" ></script>
-
-        <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
+        
+        
+        <script src="js/slick.min.js"></script>
         <script type="text/javascript">
-            $('#slides').slick({
-                slidesToScroll: 1,
+            $("#slides").slick({
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 2000, 
                 fade: true,
-                cssEase: "linear",
+                cssEase: 'linear'
             });
         </script>
+        <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
 
