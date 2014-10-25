@@ -30,16 +30,16 @@
             </div>
 
             <div id="slides">
-                <img src="images/chavez-1.jpg" alt="">
-                <img src="images/chavez-2.jpg" alt="">
-                <img src="images/chavez-3.jpg" alt="">
-                <img src="images/chavez-4.jpg" alt="">
-                <img src="images/chavez-5.jpg" alt="">
-                <img src="images/chavez-6.jpg" alt="">
-                <img src="images/chavez-7.jpg" alt="">
-                <img src="images/chavez-8.jpg" alt="">
-                <img src="images/chavez-9.jpg" alt="">
-                <img src="images/chavez-10.jpg" alt="">
+                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <div><img src="images/chavez-2.jpg" alt=""></div>
+                <div><img src="images/chavez-3.jpg" alt=""></div>
+                <div><img src="images/chavez-4.jpg" alt=""></div>
+                <div><img src="images/chavez-5.jpg" alt=""></div>
+                <div><img src="images/chavez-6.jpg" alt=""></div>
+                <div><img src="images/chavez-7.jpg" alt=""></div>
+                <div><img src="images/chavez-8.jpg" alt=""></div>
+                <div><img src="images/chavez-9.jpg" alt=""></div>
+                <div><img src="images/chavez-10.jpg" alt=""></div>
             </div>
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
         </header>
@@ -359,15 +359,14 @@
 
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
-        <script src="js/slick.min.js"></script>
+          <script src="js/slick.min.js"></script>
         <script type="text/javascript">
-                $('#slides').slick({
-                    slidesToScroll: 10,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    fade: true,
-                    cssEase: "linear",
-                });
+            $("#slides").slick({
+                autoplay: true,
+                autoplaySpeed: 2000, 
+                fade: true,
+                cssEase: 'linear'
+            });
         </script>
 
 
