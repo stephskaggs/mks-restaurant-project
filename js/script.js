@@ -25,7 +25,7 @@ $(function() {
         // console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '.menu-selection-item' ).removeClass( 'is-active' );
+      $( '.menu-section-item' ).removeClass( 'is-active' );
         // console.log(id);
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
@@ -54,7 +54,7 @@ $(function() {
 
      function getMenu( course ) {
      // Use `$.getJSON` to get the menu for whatever menu heading was clicked
-     $.getJSON( 'json/menu-' + course + '.json', function( json ) {
+     $.getJSON( '../json/menu-' + course + '.json', function( json ) {
        populateMenu( json );
        // console.log(course);
        // Once you're started with TODO #3, call the populateMenu function here
@@ -72,9 +72,9 @@ $(function() {
 
       // start a for loop that iterates through json.length
       // add json.length into this for loop code
-      for( var i = 0; i < ; i++ ){
+      for( var i = 0; i < json.length; i++ ){
         // wrap each section in a menu-group div
-        html += '<div class="menu-group columns small-12 medium-4">';
+        html += '<div class="menu-group columns small-12 large-4">';
         // append inside the menu-group div a h4 with the json section name in it
         // all the content in this for loop will follow this same model:
         // put the correct content in between the blank + + signs.
@@ -87,9 +87,9 @@ $(function() {
           html += '<div class="menu-item">';
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
-          html += '<div class="menu-item-dish">' + json[i].content[j]. + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j]. + '</p>';
-          html += '<div class="menu-item-price">' + json[i].content[j]. + '</div>';
+          html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
+          html += '<p class="menu-item-ingredients left">' + json[i].content[j].ingredients + '</p>';
+          html += '<div class="menu-item-price left">' + json[i].content[j].price + '</div>';
           html += '</div>';
         }
 
@@ -104,5 +104,7 @@ $(function() {
 
     // TODO #4 Call getMenu with a menu of your choice and set that menu's
     // header to active so that a menu is loaded with the page by default
+
+   getMenu('breakfast');
 
 });
