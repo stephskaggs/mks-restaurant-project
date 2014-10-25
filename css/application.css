@@ -155,6 +155,7 @@ section {
 
 .menu-item {
     margin-bottom: 1em;
+   /* border: solid black;*/
     /* TODO give each menu item some bottom margin */
 /*    border: solid red;*/
 }
