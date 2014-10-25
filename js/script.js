@@ -21,7 +21,7 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var  id= $( this );
 
       // Remove the class 'is-active' from all menu item headings
       $( '' ).removeClass( '' );
